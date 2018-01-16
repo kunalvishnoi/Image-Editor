@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image-editor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <body>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <p class="logo-head" href="#home">Image-Editor</p>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <label for="load_file" >
+                  Choose File
+                </label>
+                <input type="file" id="load_file"  />
+              </li>
+              <li><button class=" btn btn-link" id="reset" type="button"> Reset</button></li>
+              <li><button class=" btn btn-success" id="print" type="button"> Download<i class="glyphicon glyphicon-download"></i></button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <div class="row">
+        <div class="col-lg-8" style="height:100%;">
+          <canvas id="imageCanvas"></canvas>
+          <img style="margin-left: 80px;" src="assets/1.png">
+          
+          
+        </div>
+        <div class="col-lg-2 sidebar ">
+          
+          <button id="invertbtn">Invert</button>
+          <button id="grayscalebtn">Grayscale</button>
+          <button id="brightenbtn" data-value="10">Brighten</button>
+          <button id="transparentbtn" data-value="30">Transparent</button>
+          <button id="darkenbtn" data-value="5">Darken</button>
+          <button id="solarisebtn" data-value="20">Solarise</button>
+          <button id="greenrybtn" data-value="10">Greenry</button>
+          <button id="nightlybtn" data-value="5">Nightly</button>
+          <button id="kelvinbtn">Kelvin</button>
+        </div>
+        <br><br>
+        <script type="text/javascript" src="assets/script.js"></script>
+      </body>

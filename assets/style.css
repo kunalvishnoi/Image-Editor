@@ -1,0 +1,95 @@
+*{
+  margin: 0px;
+}
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #dde6e9;
+
+overflow-x: hidden;
+
+}
+.navbar
+{
+margin-bottom: 0;
+border-radius: 0;
+font-size: 2rem;
+min-height: 90px;
+padding-top: 20px;
+text-transform: uppercase;
+border:none;
+background-color: #f2f2f2;
+}
+.logo-image{
+max-height: 75px;
+max-width: 75px;
+margin-top: -15px;
+}
+.logo-image:hover{
+text-decoration: none !important;
+color: transparent;
+}
+.logo-head{
+font-size: 40px;
+color: #222;
+text-decoration: none;
+}
+
+label{
+    padding: 10px;
+  background-color: #47beff;
+    display: table;
+    color: #fff;
+     }
+     label:hover{
+      background-color: #3CABE7;
+  border: solid 1px #3CABE7;
+     }
+
+
+
+input[type="file"] {
+    display: none;
+}
+#imageCanvas{
+  box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.15);
+  position:absolute;
+  top:50%;
+  left:50%;
+  max-height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+margin-left: 80px;
+  transform:translate(-50%,-50%);
+}
+@media print { 
+ /* All your print styles go here */
+ #header, #footer, #nav { display: none !important; } 
+}
+.sidebar{
+  width: 300px;
+  
+  background-color: #fbfbfb;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  overflow-y: scroll;
+  box-shadow: -3px 0px 8px #cad9de;
+  padding: 0;
+}
+  .sidebar button{
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    outline: none;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-bottom: solid 1px #e4ebf1;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+  }
+    .sidebar button:active{
+      background-color: #47beff;
+      color: #fff;
+    }
